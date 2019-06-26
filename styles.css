@@ -73,7 +73,7 @@ body{
     line-height: 20px;
     top: 12px;
     font-size: 0.83rem;
-    font-weight: 100;
+    font-weight: 5;
 }
 
 
@@ -85,6 +85,7 @@ body{
     align-items: center;
     padding-top: 20px;
     padding-right: 225px;
+    
 
     
 
@@ -95,6 +96,14 @@ body{
     
 }
 
+.header > .navigationWrapper > .centerColumn > .navLinks > .navlinkPen:hover{
+  border-bottom: 5px solid #ffffff;
+  text-decoration: none;
+    
+
+}
+
+.
 
 
 
