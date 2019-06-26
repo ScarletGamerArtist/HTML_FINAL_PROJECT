@@ -1,0 +1,108 @@
+/*common styles*/
+body{
+    margin: 0px;
+    background-color: #222;
+}
+
+/*space above the nav bar*/
+.header > .navSpace {
+    display: block;
+    height: 65px;
+    width: 100%;
+    background-color: none transparent;
+}
+
+/*common nav styles*/
+.header > .navigationWrapper {
+    height: 65px;
+    width: 100%;
+    background-color: #000000;
+    color: #ffffff;
+    border-bottom: 1px solid #222;
+
+    /*flexbox container*/
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px;
+    box-sizing: border-box;
+
+    /*fonts*/
+    font-family: "Lato", "Lucida Grande", "Lucida Sans Unicode", Tahoma, Sans-Serif;
+    line-height: 1.5;
+    font-size: 15px;
+    font-weight: 400;
+
+}
+
+    /*Left column*/
+.header > .navigationWrapper > .leftColumn {
+    display: grid;
+    grid-template-columns: 1fr;
+
+
+
+}
+
+    /*Logo*/
+.header > .navigationWrapper > .leftColumn > .logo {
+    padding-left: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+
+}
+
+
+    /*Center Column*/
+.header > .navigationWrapper > .centerColumn {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 42px;
+    width: 500px;
+}
+
+
+.header > .navigationWrapper > .centerColumn > .navLinks > .navlinkPen::before {
+    content: 'Explore';
+    text-transform: uppercase;
+    color: #f4e17f;
+
+    position: absolute;
+    display: block;
+    line-height: 20px;
+    top: 12px;
+    font-size: 0.83rem;
+    font-weight: 100;
+}
+
+
+
+
+.header > .navigationWrapper > .centerColumn > .navLinks {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 20px;
+    padding-right: 225px;
+
+    
+
+    font-family: "Lato", "Lucida Grande", "Lucida Sans Unicode", Tahoma, Sans-Serif;
+    line-height: 1.5;
+    font-size: 15px;
+    font-weight: 905;
+    
+}
+
+
+
+
+
+
+
+
+    /*Main*/
+    .mainContent > {
+    
+    }
