@@ -53,6 +53,10 @@ body{
 
 }
 
+.header > .navigationWrapper > .leftColumn > .logo:hover {
+    cursor: pointer;
+}
+
 
     /*Center Column*/
 .header > .navigationWrapper > .centerColumn {
@@ -84,7 +88,8 @@ body{
     justify-content: space-between;
     align-items: center;
     padding-top: 20px;
-    padding-right: 225px;
+    padding-right: 40px;
+    padding-left: 40px;
     
 
     
@@ -97,21 +102,209 @@ body{
 }
 
 .header > .navigationWrapper > .centerColumn > .navLinks > .navlinkPen:hover{
-  border-bottom: 5px solid #ffffff;
+  border-bottom: 3px solid #76DAFF;
+  line-height: 37px;
   text-decoration: none;
+  cursor: pointer;
+  padding-top: 2px;
     
 
 }
 
-.
+.header > .navigationWrapper > .centerColumn > .navLinks > .navlinkPosts:hover{
+    border-bottom: 3px solid rgb(79, 236, 79);
+    line-height: 37px;
+    text-decoration: none;
+    cursor: pointer;
+    padding-top: 2px;
+
+}
+
+.header > .navigationWrapper > .centerColumn > .navLinks > .navlinkProjects:hover{
+    border-bottom: 3px solid yellow;
+    line-height: 37px;
+    text-decoration: none;
+    cursor: pointer;
+    padding-top: 2px;
+}
+
+.header > .navigationWrapper > .centerColumn > .navLinks > .navlinkCollections:hover{
+    border-bottom: 3px solid rgb(181, 110, 223);
+    line-height: 37px;
+    text-decoration: none;
+    cursor: pointer;
+    padding-top: 2px;
+}
 
 
+/*Right Column*/
+.header > .navigationWrapper > .rightColumn {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap:42px;
+    width: 400px;
+    align-items: center;
 
+}
 
-
-
-
-    /*Main*/
-    .mainContent > {
+/*Spark*/
+.header > .navigationWrapper > .rightColumn > .sparkWrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 20px;
+   
     
-    }
+    
+
+    
+
+    font-family: "Lato", "Lucida Grande", "Lucida Sans Unicode", Tahoma, Sans-Serif;
+    line-height: 1.5;
+    font-size: 15px;
+    font-weight: 5;
+   
+}
+
+
+.header > .navigationWrapper > .rightColumn > .sparkWrapper > .spark {
+    display: flex;
+    justify-content: space-around;
+
+    font-weight: 5;
+    color: rgb(160, 160, 160);
+
+}
+
+
+.header > .navigationWrapper > .rightColumn > .sparkWrapper > .spark:hover {
+    border-bottom: 3px solid rgb(128, 128, 128);
+    color: #ffffff;
+    line-height: 37px;
+    text-decoration: none;
+    cursor: pointer;
+    padding-top: 2px;
+}
+
+.header > .navigationWrapper > .rightColumn > .sparkWrapper > .chev {
+    color: rgb(204, 204, 204);
+    padding-right: 330px;
+}
+
+.header > .navigationWrapper > .rightColumn > .sparkWrapper > .chev:hover {
+    color: #ffffff;
+}
+
+/*Nav buttons*/
+.header > .navigationWrapper > .navButtons {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap:42px;
+    width: 500px;
+    align-items: center;
+
+    display: flex;
+    justify-content: space-between;
+    padding-right: 20px;
+   
+}
+
+
+.header > .navigationWrapper > .navButtons > .createWrapper {
+    display: flex;
+    justify-content: space-between;
+
+    background-color: rgb(61, 60, 65);
+    height: 40px;
+    width: 100px;
+    align-items: center;
+    padding-right: 10px;
+    padding-left: 10px;
+
+    border: 3px solid transparent; 
+    border-radius: 3px;
+}
+
+.header > .navigationWrapper > .navButtons > .createWrapper > .create { 
+   display: flex;
+   justify-content: space-between;
+   font-size: 1.1em;
+}
+
+.header > .navigationWrapper > .navButtons > .createWrapper > .chev {
+    color: rgb(79, 236, 79);
+    font-size: 1.3em;
+    padding-right: 10px;
+    
+}
+
+.header > .navigationWrapper > .navButtons > .createWrapper:hover {
+    background-color: rgb(84, 83, 88);
+    cursor: pointer;
+
+}
+
+.header > .navigationWrapper > .navButtons > .icon {
+    font-size: 2em;
+    color: rgb(116, 116, 121);
+}
+
+.header > .navigationWrapper > .navButtons > .icon:hover { 
+    color: #ffff;
+    cursor: pointer;
+
+}
+
+.header > .navigationWrapper > .navButtons > .login {
+
+    display: flex;
+    justify-content: space-between;
+
+    font-size: 1.1em;
+
+    background-color: rgb(61, 60, 65);
+    height: 40px;
+    width: 50px;
+    align-items: center;
+    padding-right: 10px;
+    padding-left: 10px;
+
+    border: 3px solid transparent; 
+    border-radius: 3px;
+
+}
+
+.header > .navigationWrapper > .navButtons > .login:hover {
+    background-color: rgb(84, 83, 88);
+    cursor: pointer;
+}
+
+.header > .navigationWrapper > .navButtons > .signup {
+    padding-right: 40px;
+
+    font-size: 1.1em;
+
+    display: flex;
+    justify-content: space-between;
+
+    background-color: rgb(61, 60, 65);
+    height: 40px;
+    width: 60px;
+    align-items: center;
+    padding-right: 10px;
+    padding-left: 10px;
+
+    border: 3px solid transparent; 
+    border-radius: 3px;
+    
+}
+
+.header > .navigationWrapper > .navButtons > .signup:hover {
+    background-color: rgb(84, 83, 88);
+    cursor: pointer;
+}
+
+
+ .spacer {
+     padding-right: 12px;
+}
