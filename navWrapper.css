@@ -1,0 +1,53 @@
+/*space above the nav bar*/
+.header > .navSpace {
+    display: block;
+    height: 65px;
+    width: 100%;
+    background-color: none transparent;
+}
+
+/*common nav styles*/
+.header > .navigationWrapper {
+    height: 65px;
+    width: 100%;
+    background-color: #000000;
+    color: #ffffff;
+    border-bottom: 1px solid #222;
+
+    /*flexbox container*/
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px;
+    box-sizing: border-box;
+
+    /*fonts*/
+    font-family: "Lato", "Lucida Grande", "Lucida Sans Unicode", Tahoma, Sans-Serif;
+    line-height: 1.5;
+    font-size: 15px;
+    font-weight: 400;
+
+}
+
+
+    /*Left column*/
+    .header > .navigationWrapper > .leftColumn {
+        display: grid;
+        grid-template-columns: 1fr;
+    
+    
+    
+    }
+    
+        /*Logo*/
+    .header > .navigationWrapper > .leftColumn > .logo {
+        padding-left: 20px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    
+    }
+    
+    .header > .navigationWrapper > .leftColumn > .logo:hover {
+        cursor: pointer;
+    }

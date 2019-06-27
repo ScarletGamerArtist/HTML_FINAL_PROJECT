@@ -2,6 +2,7 @@
 body{
     margin: 0px;
     background-color: #222;
+
 }
 
 /*space above the nav bar*/
@@ -36,26 +37,27 @@ body{
 
 }
 
+
     /*Left column*/
-.header > .navigationWrapper > .leftColumn {
-    display: grid;
-    grid-template-columns: 1fr;
-
-
-
-}
-
-    /*Logo*/
-.header > .navigationWrapper > .leftColumn > .logo {
-    padding-left: 20px;
-    padding-top: 20px;
-    padding-bottom: 20px;
-
-}
-
-.header > .navigationWrapper > .leftColumn > .logo:hover {
-    cursor: pointer;
-}
+     .navigationWrapper > .leftColumn {
+        display: grid;
+        grid-template-columns: 1fr;
+    
+    
+    
+    }
+    
+        /*Logo*/
+    .navigationWrapper > .leftColumn > .logo {
+        padding-left: 20px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    
+    }
+    
+    .navigationWrapper > .leftColumn > .logo:hover {
+        cursor: pointer;
+    }
 
 
     /*Center Column*/
@@ -137,174 +139,126 @@ body{
 }
 
 
-/*Right Column*/
-.header > .navigationWrapper > .rightColumn {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-gap:42px;
-    width: 400px;
-    align-items: center;
+/* ------------------------------------------------------------- */
 
-}
-
-/*Spark*/
-.header > .navigationWrapper > .rightColumn > .sparkWrapper {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding-top: 20px;
-   
-    
-    
-
-    
-
+/*Main Content*/
+.mainContent {
+    font-size: 2rem;
     font-family: "Lato", "Lucida Grande", "Lucida Sans Unicode", Tahoma, Sans-Serif;
-    line-height: 1.5;
-    font-size: 15px;
-    font-weight: 5;
-   
+    font-weight: 300;
+    color: #fff;
+
 }
 
+/*Description*/
+.mainContent > .description {
+    padding-top: 50px;
+    padding-left: 50px;
+}
 
-.header > .navigationWrapper > .rightColumn > .sparkWrapper > .spark {
+.mainContent > .description > .topWrapper {
+    font-size: .9em;
+    padding-bottom: 30px;
     display: flex;
-    justify-content: space-around;
-
-    font-weight: 5;
-    color: rgb(160, 160, 160);
-
+    
 }
 
-
-.header > .navigationWrapper > .rightColumn > .sparkWrapper > .spark:hover {
-    border-bottom: 3px solid rgb(128, 128, 128);
-    color: #ffffff;
-    line-height: 37px;
-    text-decoration: none;
-    cursor: pointer;
-    padding-top: 2px;
-}
-
-.header > .navigationWrapper > .rightColumn > .sparkWrapper > .chev {
-    color: rgb(204, 204, 204);
-    padding-right: 330px;
-}
-
-.header > .navigationWrapper > .rightColumn > .sparkWrapper > .chev:hover {
-    color: #ffffff;
-}
-
-/*Nav buttons*/
-.header > .navigationWrapper > .navButtons {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-gap:42px;
-    width: 500px;
-    align-items: center;
-
-    display: flex;
-    justify-content: space-between;
-    padding-right: 20px;
-   
-}
-
-
-.header > .navigationWrapper > .navButtons > .createWrapper {
-    display: flex;
-    justify-content: space-between;
-
-    background-color: rgb(61, 60, 65);
-    height: 40px;
-    width: 100px;
-    align-items: center;
-    padding-right: 10px;
-    padding-left: 10px;
-
-    border: 3px solid transparent; 
-    border-radius: 3px;
-}
-
-.header > .navigationWrapper > .navButtons > .createWrapper > .create { 
-   display: flex;
-   justify-content: space-between;
-   font-size: 1.1em;
-}
-
-.header > .navigationWrapper > .navButtons > .createWrapper > .chev {
-    color: rgb(79, 236, 79);
+.mainContent > .description > .topWrapper b{
     font-size: 1.3em;
+
+}
+
+/*icon*/
+
+.mainContent > .description > .topWrapper > .icon {
+    display: flex;
+    padding-top: 85px;
+    color: rgb(0, 183, 255)
+}
+
+.mainContent > .description > .topWrapper > .icon i{
+    color: rgb(255, 208, 0);
+}
+
+/*bottom text*/
+
+.mainContent > .description > .bottomWrapper {
+    font-size: .7em;
+}
+
+
+/*Buttons*/
+
+.mainContent > .buttons {
+    padding-top: 50px;
+    display: flex;
+    padding-left: 55px;
+}
+
+.mainContent > .buttons > .greenButton {
+    display: flex;
+    justify-content: space-between;
+   
+    color: #000;
+
+    background-color: rgb(79, 236, 79);
+    height:60px; 
+
+    align-items: center;
     padding-right: 10px;
-    
+    padding-left: 10px;
+
+    border: 3px solid transparent; 
+    border-radius: 3px;
+
 }
 
-.header > .navigationWrapper > .navButtons > .createWrapper:hover {
-    background-color: rgb(84, 83, 88);
+.mainContent > .buttons > .greenButton:hover {
+    background-color: rgb(39, 163, 39);
     cursor: pointer;
+}
+
+
+.mainContent > .buttons > .blackButton {
+    display: flex;
+    justify-content: space-between;
+   
+    color: rgb(255, 255, 255);
+
+    background-color: rgb(0, 0, 0);
+    height:60px; 
+
+    align-items: center;
+    padding-right: 10px;
+    padding-left: 10px;
+
+    border: 3px solid transparent; 
+    border-radius: 3px;
 
 }
 
-.header > .navigationWrapper > .navButtons > .icon {
-    font-size: 2em;
-    color: rgb(116, 116, 121);
+.mainContent > .buttons > .blackButton:hover {
+    background-color: rgb(19, 19, 19);
+    cursor: pointer;
 }
 
-.header > .navigationWrapper > .navButtons > .icon:hover { 
+.mainContent > .rightSection {
+    font-size: .5em;
+    
+    
+    display: block;
+    padding-left: 1300px;
+  
+
+}
+
+.mainContent > .rightSection a {
+    text-decoration: none;
+    color: rgb(0, 204, 255);
+}
+
+.mainContent > .rightSection a:hover {
     color: #ffff;
-    cursor: pointer;
-
-}
-
-.header > .navigationWrapper > .navButtons > .login {
-
-    display: flex;
-    justify-content: space-between;
-
-    font-size: 1.1em;
-
-    background-color: rgb(61, 60, 65);
-    height: 40px;
-    width: 50px;
-    align-items: center;
-    padding-right: 10px;
-    padding-left: 10px;
-
-    border: 3px solid transparent; 
-    border-radius: 3px;
-
-}
-
-.header > .navigationWrapper > .navButtons > .login:hover {
-    background-color: rgb(84, 83, 88);
-    cursor: pointer;
-}
-
-.header > .navigationWrapper > .navButtons > .signup {
-    padding-right: 40px;
-
-    font-size: 1.1em;
-
-    display: flex;
-    justify-content: space-between;
-
-    background-color: rgb(61, 60, 65);
-    height: 40px;
-    width: 60px;
-    align-items: center;
-    padding-right: 10px;
-    padding-left: 10px;
-
-    border: 3px solid transparent; 
-    border-radius: 3px;
     
 }
-
-.header > .navigationWrapper > .navButtons > .signup:hover {
-    background-color: rgb(84, 83, 88);
-    cursor: pointer;
-}
-
-
- .spacer {
-     padding-right: 12px;
-}
+ 

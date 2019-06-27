@@ -1,0 +1,57 @@
+/*Right Column*/
+.header > .navigationWrapper > .rightColumn {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap:42px;
+    width: 400px;
+    align-items: center;
+
+}
+
+/*Spark*/
+.header > .navigationWrapper > .rightColumn > .sparkWrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 20px;
+   
+    
+    
+
+    
+
+    font-family: "Lato", "Lucida Grande", "Lucida Sans Unicode", Tahoma, Sans-Serif;
+    line-height: 1.5;
+    font-size: 15px;
+    font-weight: 5;
+   
+}
+
+
+.header > .navigationWrapper > .rightColumn > .sparkWrapper > .spark {
+    display: flex;
+    justify-content: space-around;
+
+    font-weight: 5;
+    color: rgb(160, 160, 160);
+
+}
+
+
+.header > .navigationWrapper > .rightColumn > .sparkWrapper > .spark:hover {
+    border-bottom: 3px solid rgb(128, 128, 128);
+    color: #ffffff;
+    line-height: 37px;
+    text-decoration: none;
+    cursor: pointer;
+    padding-top: 2px;
+}
+
+.header > .navigationWrapper > .rightColumn > .sparkWrapper > .chev {
+    color: rgb(204, 204, 204);
+    padding-right: 330px;
+}
+
+.header > .navigationWrapper > .rightColumn > .sparkWrapper > .chev:hover {
+    color: #ffffff;
+}
