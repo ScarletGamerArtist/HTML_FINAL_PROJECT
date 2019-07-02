@@ -189,10 +189,17 @@ body{
 
 /*Buttons*/
 
-.mainContent > .buttons {
+.mainContent >  .buttons {
+
+    margin: 0px;
     padding-top: 50px;
     display: flex;
-    padding-left: 55px;
+    padding-left: 30px;
+
+    height: 65px;
+    width: 515px;
+  
+
 }
 
 .mainContent > .buttons > .greenButton {
@@ -213,13 +220,13 @@ body{
 
 }
 
-.mainContent > .buttons > .greenButton:hover {
+.mainContent >  .buttons > .greenButton:hover {
     background-color: rgb(39, 163, 39);
     cursor: pointer;
 }
 
 
-.mainContent > .buttons > .blackButton {
+.mainContent >  .buttons > .blackButton {
     display: flex;
     justify-content: space-between;
    
@@ -243,13 +250,17 @@ body{
 }
 
 .mainContent > .rightSection {
+    display: block;
+    box-sizing: border-box;
+
+    position: relative;
+
+    top: -350px;
+
     font-size: .5em;
     
-    
-    display: block;
-    padding-left: 1300px;
+    left: 1300px;
   
-
 }
 
 .mainContent > .rightSection a {
@@ -261,4 +272,180 @@ body{
     color: #ffff;
     
 }
+
+/* ------------------------------------------------------ */
+/* Footer Styles */
+
+.footer {
+    height: 48px;
+    width: 100%;
+    background-color: rgb(61, 60, 65);
+    color: #ffffff;
+
+    /*flexbox container*/
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px;
+    box-sizing: border-box;
+
+    top:-250px;
+
+    /*fonts*/
+    font-family: "Lato", "Lucida Grande", "Lucida Sans Unicode", Tahoma, Sans-Serif;
+    line-height: 1.5;
+    font-size: 15px;
+    font-weight: 400;
+}
+
+.footer > .buttons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+   
+    
+}
+
+.footer > .buttons > .teams {
+    background-color: rgb(61, 60, 65);
+    width: 457.4px;
+    height: 48px;
+    border: 1px solid #676767;
+    text-align: center;
+    
+    font-size: 1.em;
+    
+
+}
+
+.footer > .buttons > .education {
+    background-color: rgb(61, 60, 65);
+    width: 457.4px;
+    height: 48px;
+    border: 1px solid #676767;
+    text-align: center;
+
+    font-size: 1.em;
+
+}
+
+.footer > .buttons > .privacy {
+    background-color: rgb(61, 60, 65);
+    width: 457.4px;
+    height: 48px;
+    border: 1px solid #676767;
+    text-align: center;
+
+    font-size: 1.em;
+
+}
+
+.footer > .buttons > .writing {
+    background-color: rgb(61, 60, 65);
+    width: 457.4px;
+    height: 48px;
+    border: 1px solid #676767;
+    text-align: center;
+
+    font-size: 1.em;
+    
+}
+
+.footer > .buttons b{
+    font-size: 1.5em;
+}
+
+
+.footer > .buttons > .teams:hover {
+    background-color: rgb(68, 66, 60);
+    cursor: pointer;
+}
+
+.footer > .buttons > .education:hover {
+    background-color: rgb(68, 66, 60);
+    cursor: pointer;
+}
  
+.footer > .buttons > .privacy:hover {
+    background-color: rgb(68, 66, 60);
+    cursor: pointer;
+}
+
+.footer > .buttons > .writing:hover {
+    background-color: rgb(68, 66, 60);
+    cursor: pointer;
+}
+
+
+/* -----------------------------------------------------------------------*/
+/*Picked Pens Styles*/
+.pickedPens {
+
+    color: #ffffff;
+    
+    /*flexbox container*/
+    display: flex;
+    position: relative;
+    justify-content: center;
+    text-align: center;
+
+    padding: 0px;
+    box-sizing: border-box;
+
+    top:-185px;
+
+    /*fonts*/
+    font-family: "Lato", "Lucida Grande", "Lucida Sans Unicode", Tahoma, Sans-Serif;
+    line-height:.5;
+    font-size: 15px;
+    font-weight: 400;
+
+    
+    
+}
+
+.pickedPens > .underline > .pP {
+    color: white;
+    
+    font-weight: 50px;
+    text-decoration: none;
+    font-size: 3em;
+    
+
+   
+    
+
+    
+   
+}
+
+.pickedPens > .underline > .view {
+    color: rgb(0, 204, 255);
+    padding-left: 700px;
+    padding-top: 32px;
+
+   /* border-bottom: 7px solid rgb(0, 204, 255) ;*/
+   
+}
+
+.pickedPens > .underline > .view:hover {
+    color: rgb(112, 226, 255);
+    cursor: pointer;
+}
+
+.pickedPens > .underline > .view  i:hover{
+    color: rgb(0, 204, 255);
+    transition: 5s;
+}
+
+.pickedPens > .underline {
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+
+    border-bottom: 7px solid rgb(0, 204, 255) ;
+}
+
+
+
